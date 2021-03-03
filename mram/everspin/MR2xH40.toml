@@ -1,0 +1,15 @@
+# Settings for the Everspin MR20H40 / MR25H40 magnetic non-volatile RAM
+# Datasheet: https://www.everspin.com/supportdocs/MR25H40CDFR
+total_size = 0x400000 # 4 MiB
+start_up_time_us = 10000
+manufacturer_id = 0xef # *no JDEC
+memory_type = 0x40 # no JDEC
+capacity = 0x14 # no JDEC
+max_clock_speed_mhz = 10
+quad_enable_bit_mask = 0x00
+has_sector_protection = false
+supports_fast_read = false
+supports_qspi = false
+supports_qspi_writes = false
+write_status_register_split = false
+single_status_byte = true

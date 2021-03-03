@@ -1,0 +1,3 @@
+no_ready_bit = true
+no_erase_cmd = true
+no_reset_cmd = true
