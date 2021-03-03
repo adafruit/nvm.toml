@@ -1,15 +1,4 @@
 # Settings for the Micron N25Q256A 256Mb (32MiB) QSPI flash.
 # Datasheet: https://www.micron.com/-/media/client/global/documents/products/data-sheet/nor-flash/serial-nor/n25q/n25q_256mb_3v.pdf
 total_size = 0x1000000 # 16 MiB
-start_up_time_us = 10000
-manufacturer_id = 0x20
-memory_type = 0xBA
 capacity = 0x19
-max_clock_speed_mhz = 108
-quad_enable_bit_mask = 0x02
-has_sector_protection = false
-supports_fast_read = true
-supports_qspi = true
-supports_qspi_writes = true
-write_status_register_split = false
-single_status_byte = true

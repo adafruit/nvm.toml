@@ -3,15 +3,6 @@
 # Source: https://www.digikey.com/product-detail/en/adesto-technologies/AT25SF161-SDHD-T/1265-1230-1-ND/
 # Datasheet: https://www.adestotech.com/wpo-content/uploads/jDS-AT25SF161_046.pdf
 total_size = 0x200000 # 2 MiB
-start_up_time_us = 10000
-manufacturer_id = 0x1f
 memory_type = 0x86
 capacity = 0x01
-max_clock_speed_mhz = 85
-quad_enable_bit_mask = 0x00
 has_sector_protection = true
-supports_fast_read = true
-supports_qspi = false
-supports_qspi_writes = false
-write_status_register_split = false
-single_status_byte = false

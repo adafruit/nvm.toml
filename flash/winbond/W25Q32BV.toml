@@ -2,14 +2,10 @@
 # Datasheet: https://www.winbond.com/resource-files/w25q32bv_revi_100413_wo_automotive.pdf
 total_size = 0x400000 # 4 MiB
 start_up_time_us = 10000
-manufacturer_id = 0xef
 memory_type = 0x60
 capacity = 0x16
 max_clock_speed_mhz = 104
 quad_enable_bit_mask = 0x02
-has_sector_protection = false
-supports_fast_read = true
 supports_qspi = true
 supports_qspi_writes = false
-write_status_register_split = false
 single_status_byte = false

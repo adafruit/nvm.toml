@@ -2,14 +2,8 @@
 # Datasheet: http://www.cypress.com/file/316661/download
 total_size = 0x800000 # 8 MiB
 start_up_time_us = 300
-manufacturer_id = 0x01
 memory_type = 0x60
 capacity = 0x17
 max_clock_speed_mhz = 108
-quad_enable_bit_mask = 0x02
-has_sector_protection = false
-supports_fast_read = true
 supports_qspi = true
 supports_qspi_writes = true
-write_status_register_split = false
-single_status_byte = false

@@ -1,0 +1,10 @@
+start_up_time_us = 10000
+manufacturer_id = 0x20
+memory_type = 0xBA
+max_clock_speed_mhz = 108
+quad_enable_bit_mask = 0x02
+has_sector_protection = false
+supports_qspi = true
+supports_qspi_writes = true
+write_status_register_split = false
+single_status_byte = true
