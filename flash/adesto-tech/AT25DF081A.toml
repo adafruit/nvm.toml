@@ -1,18 +1,16 @@
-// Settings for the Adesto Tech AT25DF081A 1MiB SPI flash. It's on the SAMD21
-// Xplained board.
-// Datasheet: https://www.adestotech.com/wp-content/uploads/doc8715.pdf
-#define AT25DF081A {\
-    .total_size = (1 << 20), /* 1 MiB */ \
-    .start_up_time_us = 10000, \
-    .manufacturer_id = 0x1f, \
-    .memory_type = 0x45, \
-    .capacity = 0x01, \
-    .max_clock_speed_mhz = 85, \
-    .quad_enable_bit_mask = 0x00, \
-    .has_sector_protection = true, \
-    .supports_fast_read = true, \
-    .supports_qspi = false, \
-    .supports_qspi_writes = false, \
-    .write_status_register_split = false, \
-    .single_status_byte = false, \
-}
+# Settings for the Adesto Tech AT25DF081A 1MiB SPI flash. It's on the SAMD21
+# Xplained board.
+# Datasheet: https://www.adestotech.com/wp-content/uploads/doc8715.pdf
+total_size = 0x100000 # 1 MiB
+start_up_time_us = 10000
+manufacturer_id = 0x1f
+memory_type = 0x45
+capacity = 0x01
+max_clock_speed_mhz = 85
+quad_enable_bit_mask = 0x00
+has_sector_protection = true
+supports_fast_read = true
+supports_qspi = false
+supports_qspi_writes = false
+write_status_register_split = false
+single_status_byte = false

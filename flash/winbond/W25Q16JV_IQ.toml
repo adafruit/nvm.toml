@@ -1,18 +1,15 @@
-
-// Settings for the Winbond W25Q16JV-IQ 2MiB SPI flash. Note that JV-IM has a different .memory_type (0x70)
-// Datasheet: https://www.winbond.com/resource-files/w25q16jv%20spi%20revf%2005092017.pdf
-#define W25Q16JV_IQ {\
-    .total_size = (1 << 21), /* 2 MiB */ \
-    .start_up_time_us = 5000, \
-    .manufacturer_id = 0xef, \
-    .memory_type = 0x40, \
-    .capacity = 0x15, \
-    .max_clock_speed_mhz = 133, \
-    .quad_enable_bit_mask = 0x02, \
-    .has_sector_protection = false, \
-    .supports_fast_read = true, \
-    .supports_qspi = true, \
-    .supports_qspi_writes = true, \
-    .write_status_register_split = false, \
-    .single_status_byte = false, \
-}
+# Settings for the Winbond W25Q16JV-IQ 2MiB SPI flash. Note that JV-IM has a different .memory_type (0x70)
+# Datasheet: https://www.winbond.com/resource-files/w25q16jv%20spi%20revf%2005092017.pdf
+total_size = 0x200000 # 2 MiB
+start_up_time_us = 5000
+manufacturer_id = 0xef
+memory_type = 0x40
+capacity = 0x15
+max_clock_speed_mhz = 133
+quad_enable_bit_mask = 0x02
+has_sector_protection = false
+supports_fast_read = true
+supports_qspi = true
+supports_qspi_writes = true
+write_status_register_split = false
+single_status_byte = false

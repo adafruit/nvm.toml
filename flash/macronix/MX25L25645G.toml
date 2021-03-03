@@ -1,17 +1,14 @@
-// Settings for the Macronix MX25L51245G 64MiB SPI flash.
-// Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/7437/MX25L51245G,%203V,%20512Mb,%20v1.6.pdf
-#define MX25L25645G  {\
-    .total_size = (1 << 25), /* 32 MiB */ \
-    .start_up_time_us = 5000, \
-    .manufacturer_id = 0x9f, \
-    .memory_type = 0xab, \
-    .capacity = 0x90, \
-    .max_clock_speed_mhz = 133, \
-   .quad_enable_bit_mask = 0xaf, \
-    .has_sector_protection = false, \
-    .supports_fast_read = true, \
-    .supports_qspi = true, \
-    .supports_qspi_writes = true, \
-    .write_status_register_split = false, \
-    .single_status_byte = true, \
-}
+# Settings for the Macronix MX25L51245G 64MiB SPI flash.
+# Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/7437/MX25L51245G,%203V,%20512Mb,%20v1.6.pdf
+total_size = 0x2000000 # 32 MiB
+start_up_time_us = 5000
+manufacturer_id = 0x9f
+memory_type = 0xab
+capacity = 0x90
+max_clock_speed_mhz = 133
+has_sector_protection = false
+supports_fast_read = true
+supports_qspi = true
+supports_qspi_writes = true
+write_status_register_split = false
+single_status_byte = true

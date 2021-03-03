@@ -1,17 +1,15 @@
-// Settings for the Cypress (was Spansion) S25FL116K 2MiB SPI flash.
-// Datasheet: http://www.cypress.com/file/196886/download
-#define S25FL116K {\
-    .total_size = (1 << 21), /* 2 MiB */ \
-    .start_up_time_us = 10000, \
-    .manufacturer_id = 0x01, \
-    .memory_type = 0x40, \
-    .capacity = 0x15, \
-    .max_clock_speed_mhz = 108, \
-    .quad_enable_bit_mask = 0x02, \
-    .has_sector_protection = false, \
-    .supports_fast_read = true, \
-    .supports_qspi = true, \
-    .supports_qspi_writes = false, \
-    .write_status_register_split = false, \
-    .single_status_byte = false, \
-}
+# Settings for the Cypress (was Spansion) S25FL116K 2MiB SPI flash.
+# Datasheet: http://www.cypress.com/file/196886/download
+total_size = 0x200000 # 2 MiB
+start_up_time_us = 10000
+manufacturer_id = 0x01
+memory_type = 0x40
+capacity = 0x15
+max_clock_speed_mhz = 108
+quad_enable_bit_mask = 0x02
+has_sector_protection = false
+supports_fast_read = true
+supports_qspi = true
+supports_qspi_writes = false
+write_status_register_split = false
+single_status_byte = false
