@@ -1,3 +1,2 @@
 manufacturer_id = 0xef
 has_sector_protection = false
-write_status_register_split = false

@@ -3,4 +3,5 @@
 total_size = 0x200000 # 2 MiB
 capacity = 0x15
 write_status_register_split = false
+01_continuous_status_write = true
 e7_quad_word_read = true

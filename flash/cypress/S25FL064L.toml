@@ -5,5 +5,5 @@ start_up_time_us = 300
 memory_type = 0x60
 capacity = 0x17
 max_clock_speed_mhz = 108
-supports_qspi = true
-supports_qspi_writes = true
+6b_quad_read = true
+32_qspi_write = true

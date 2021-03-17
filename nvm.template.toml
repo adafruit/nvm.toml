@@ -19,16 +19,24 @@ has_sector_protection = false
 # Supports the 0x0b fast read command with 8 dummy cycles.
 supports_fast_read = false
 
-# Supports the fast read, quad output command 0x6b with 8 dummy cycles.
-supports_qspi = false
+# Designations like 1-1-4 dictate parallelism in the command, address and data
+# phases. For example, 1-1-4 is 1 bit per clock for command and address but 4
+# data bits per clock.
+
+# Supports the fast read, quad output (1-1-4) command 0x6b with 8 dummy cycles.
+6b_quad_read = false
 
 # Supports the quad input page program command 0x32. This is known as 1-1-4 because it only
 # uses all four lines for data.
-supports_qspi_writes = false
+32_qspi_write = false
 
-# Requires a separate command 0x31 to write to the second byte of the status register.
-# Otherwise two bytes are written via 0x01.
+# Supports a separate command 0x31 to write to the second byte of the status register.
+# Status byte zero is written with 0x01 and the third byte with 0x11.
 write_status_register_split = false
+
+# Supports writing 16 bits to the status register's first two bytes via command
+# 0x01.
+01_continuous_status_write = false
 
 # Status byte number that contains the quad enable bit. (1-based to match flash docs)
 quad_enable_status_byte = 1
