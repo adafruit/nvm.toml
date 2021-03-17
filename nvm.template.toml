@@ -10,8 +10,8 @@ capacity = 0
 # achievable on a particular board.
 max_clock_speed_mhz = 0
 
-# Bitmask for Quad Enable bit if present. 0x00 otherwise. This is for the highest byte in the
-# status register.
+# Bitmask for Quad Enable bit if present. 0x00 otherwise. This is for the first byte in the status
+# register when single_status_byte = true, and the second status byte when false.
 quad_enable_bit_mask = 0x0
 
 # Supports the 0x0b fast read command with 8 dummy cycles.
@@ -24,14 +24,13 @@ supports_fast_read = false
 # uses all four lines for data.
 supports_qspi = false
 
-# Requires a separate command 0x31 to write to the second byte of the status register.
-# Otherwise two byte are written via 0x01.
 supports_qspi_writes = false
 
 # Requires a separate command 0x31 to write to the second byte of the status register.
-# Otherwise two byte are written via 0x01.
+# Otherwise two bytes are written via 0x01.
 write_status_register_split = false
 
+# True when the status register is a single byte. Otherwise, it may be two or three.
 single_status_byte = false
 
 # Does not support using a ready bit within the status register
