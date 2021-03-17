@@ -14,16 +14,16 @@ max_clock_speed_mhz = 0
 # register when single_status_byte = true, and the second status byte when false.
 quad_enable_bit_mask = 0x0
 
-# Supports the 0x0b fast read command with 8 dummy cycles.
 has_sector_protection = false
 
-# Supports the fast read, quad output command 0x6b with 8 dummy cycles.
+# Supports the 0x0b fast read command with 8 dummy cycles.
 supports_fast_read = false
+
+# Supports the fast read, quad output command 0x6b with 8 dummy cycles.
+supports_qspi = false
 
 # Supports the quad input page program command 0x32. This is known as 1-1-4 because it only
 # uses all four lines for data.
-supports_qspi = false
-
 supports_qspi_writes = false
 
 # Requires a separate command 0x31 to write to the second byte of the status register.
@@ -41,3 +41,7 @@ no_erase_cmd = false
 
 # Device does not have a reset command
 no_reset_cmd = false
+
+# True when the device supports command 0xe7 for 1-4-4 reads on 4 byte (aka word)
+# boundaries with only two dummy cycles after the mode byte.
+e7_quad_word_read = false

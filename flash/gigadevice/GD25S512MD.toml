@@ -3,3 +3,4 @@
 total_size = 0x4000000 # 64 MiB
 capacity = 0x19
 write_status_register_split = true
+e7_quad_word_read = false
