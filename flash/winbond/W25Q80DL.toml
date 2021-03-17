@@ -8,4 +8,4 @@ max_clock_speed_mhz = 104
 quad_enable_bit_mask = 0x02
 supports_qspi = true
 supports_qspi_writes = false
-single_status_byte = false
+quad_enable_status_byte = 2

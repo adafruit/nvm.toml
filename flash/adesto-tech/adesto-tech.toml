@@ -5,4 +5,4 @@ quad_enable_bit_mask = 0x00
 supports_qspi = false
 supports_qspi_writes = false
 write_status_register_split = false
-single_status_byte = false
+quad_enable_status_byte = 2

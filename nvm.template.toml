@@ -30,8 +30,8 @@ supports_qspi_writes = false
 # Otherwise two bytes are written via 0x01.
 write_status_register_split = false
 
-# True when the status register is a single byte. Otherwise, it may be two or three.
-single_status_byte = false
+# Status byte number that contains the quad enable bit. (1-based to match flash docs)
+quad_enable_status_byte = 1
 
 # Does not support using a ready bit within the status register
 no_ready_bit = false

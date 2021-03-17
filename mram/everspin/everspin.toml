@@ -9,4 +9,4 @@ supports_fast_read = false
 supports_qspi = false
 supports_qspi_writes = false
 write_status_register_split = false
-single_status_byte = true
+quad_enable_status_byte = 1

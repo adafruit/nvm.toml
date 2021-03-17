@@ -2,4 +2,4 @@ manufacturer_id = 0x01
 quad_enable_bit_mask = 0x02
 has_sector_protection = false
 write_status_register_split = false
-single_status_byte = false
+quad_enable_status_byte = 2
