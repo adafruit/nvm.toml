@@ -8,5 +8,6 @@ max_clock_speed_mhz = 133
 quad_enable_bit_mask = 0x02
 quad_enable_status_byte = 2
 write_status_register_split = false
+01_continuous_status_write = true
 6b_quad_read = true
 32_qspi_write = true

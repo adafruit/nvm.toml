@@ -5,6 +5,7 @@ start_up_time_us = 5000
 memory_type = 0x40
 capacity = 0x16
 max_clock_speed_mhz = 133
+quad_enable_status_byte = 2
 quad_enable_bit_mask = 0x02
 write_status_register_split = true
 01_continuous_status_write = true
