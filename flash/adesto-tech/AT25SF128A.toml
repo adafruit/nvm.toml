@@ -1,0 +1,13 @@
+total_size = 0x1000000 # 16 MiB
+memory_type = 0x89
+capacity = 0x01
+has_sector_protection = false
+
+start_up_time_us = 300
+max_clock_speed_mhz = 70
+quad_enable_bit_mask = 0x02
+write_status_register_split = true
+6b_quad_read = true
+32_qspi_write = true
+01_continuous_status_write = false
+e7_quad_word_read = true
