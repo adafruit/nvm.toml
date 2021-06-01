@@ -1,0 +1,7 @@
+# Settings for the Macronix MX25L3206E 4MiB SPI flash.
+# Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/7355/MX25L3206E,%203V,%2032Mb,%20v1.5.pdf
+total_size = 0x400000 # 4 MiB
+start_up_time_us = 5000
+manufacturer_id = 0xc2
+memory_type = 0x20
+capacity = 0x16
