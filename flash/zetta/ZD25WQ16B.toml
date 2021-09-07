@@ -1,0 +1,10 @@
+# Settings for the Zetta Device ZD25WQ16B 2MiB SPI flash.
+# Datasheet: http://www.zettadevice.com/upload/file/pdf/ZD25WQ16B_datasheet.pdf
+total_size = 0x200000 # 2 MiB
+start_up_time_us = 12000
+manufacturer_id = 0xba
+memory_type = 0x60
+capacity = 0x15
+max_clock_speed_mhz = 85
+quad_enable_bit_mask = 0x02
+has_sector_protection = false
