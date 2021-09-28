@@ -1,0 +1,4 @@
+# Settings for the ISSI IS25LP016D 2MiB SPI flash.
+# Datasheet: http://www.issi.com/WW/pdf/25LP-WP016D.pdf
+total_size = 0x200000 # 2 MiB
+capacity = 0x15
