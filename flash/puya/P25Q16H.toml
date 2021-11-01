@@ -1,0 +1,9 @@
+# Settings for the Puya P25Q16H 2MiB SPI flash.
+# Datasheet: https://datasheet.lcsc.com/lcsc/2006121819_-PUYA--P25Q16H-UXH-IR_C559220.pdf
+# This config is still untested.
+total_size = 0x200000 # 2 MiB # Page 17
+capacity = 0x15 
+manufacturer_id = 0x85 #  Page 49
+write_status_register_split = false
+01_continuous_status_write = true # page 21
+e7_quad_word_read = false # couldn't find in page 21/22

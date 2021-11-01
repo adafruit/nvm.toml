@@ -1,0 +1,10 @@
+# This config is still untested.
+start_up_time_us = 5000
+manufacturer_id = 0x85  # Page 49 of https://datasheet.lcsc.com/lcsc/2006121819_-PUYA--P25Q16H-UXH-IR_C559220.pdf
+memory_type = 0x60      # Page 49 of https://datasheet.lcsc.com/lcsc/2006121819_-PUYA--P25Q16H-UXH-IR_C559220.pdf
+max_clock_speed_mhz = 104   # Page 10 of https://datasheet.lcsc.com/lcsc/2006121819_-PUYA--P25Q16H-UXH-IR_C559220.pdf
+quad_enable_bit_mask = 0x02 # page 24
+has_sector_protection = false
+quad_enable_status_byte = 2  # page 24
+6b_quad_read = true  # Page 21 of https://datasheet.lcsc.com/lcsc/2006121819_-PUYA--P25Q16H-UXH-IR_C559220.pdf
+32_qspi_write = true  # Page 21 of https://datasheet.lcsc.com/lcsc/2006121819_-PUYA--P25Q16H-UXH-IR_C559220.pdf
