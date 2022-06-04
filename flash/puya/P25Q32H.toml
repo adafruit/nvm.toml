@@ -1,0 +1,7 @@
+# Settings for the Puya P25Q32H 4MiB SPI flash.
+# Datasheet: https://datasheet.lcsc.com/lcsc/1912111437_-PUYA--P25Q32H-UXH-IR_C414068.pdf
+total_size = 0x400000 # 4 MiB # Page 18
+capacity = 0x16 # page 70
+write_status_register_split = true # page 34
+01_continuous_status_write = true # page 23
+e7_quad_word_read = true # page 22
