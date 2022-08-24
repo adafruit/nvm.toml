@@ -1,0 +1,9 @@
+# Settings for the XTX XT25F64B
+# Datasheet: http://file2.dzsc.com/product/19/06/22/216185_132959081.pdf
+total_size = 0x800000 # 8 Mib
+start_up_time_us = 10000
+memory_type = 0x40
+capacity = 0x17
+max_clock_speed_mhz = 80
+quad_enable_bit_mask = 0x02
+has_sector_protection = false
