@@ -1,0 +1,13 @@
+# Settings for the Microchip SST26VF064B 64b (8MiB) QSPI flash.
+# Datasheet: https://www.microchip.com/en-us/product/SST26VF064B
+total_size = 0x800000 # 8 MiB
+memory_type = 0x26
+capacity = 0x43
+start_up_time_us = 10000
+max_clock_speed_mhz = 104
+single_status_byte = true
+write_status_register_split = false
+quad_enable_bit_mask = 0x00
+quad_enable_status_byte = 1
+6b_quad_read = true
+32_qspi_write = true
