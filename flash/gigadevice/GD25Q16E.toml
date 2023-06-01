@@ -1,0 +1,9 @@
+# Settings for the Gigadevice GD25Q16E 2MiB SPI flash.
+# Datasheet: https://www.gigadevice.com.cn/Public/Uploads/uploadfile/files/20220714/DS-00473-GD25Q16E-Rev1.2.pdf
+total_size = 0x200000 # 2 MiB
+capacity = 0x15
+write_status_register_split = false
+01_continuous_status_write = true
+e7_quad_word_read = false
+start_up_time_us = 1000
+max_clock_speed_mhz = 133

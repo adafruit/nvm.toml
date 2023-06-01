@@ -4,3 +4,5 @@ total_size = 0x4000000 # 64 MiB
 capacity = 0x19
 write_status_register_split = true
 e7_quad_word_read = false
+start_up_time_us = 5000
+max_clock_speed_mhz = 104 # if we need 120 then we can turn on high performance mode

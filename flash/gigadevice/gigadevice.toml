@@ -1,7 +1,5 @@
-start_up_time_us = 5000
 manufacturer_id = 0xc8
 memory_type = 0x40
-max_clock_speed_mhz = 104 # if we need 120 then we can turn on high performance mode
 quad_enable_bit_mask = 0x02
 has_sector_protection = false
 quad_enable_status_byte = 2
