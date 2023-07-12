@@ -5,3 +5,5 @@ capacity = 0x16
 write_status_register_split = true
 e7_quad_word_read = true
 01_continuous_status_write = false
+start_up_time_us = 5000
+max_clock_speed_mhz = 104 # if we need 120 then we can turn on high performance mode
