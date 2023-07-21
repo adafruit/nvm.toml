@@ -1,0 +1,6 @@
+# Settings for the Gigadevice GD25WQ128E 16MiB SPI flash.
+# Datasheet: https://www.mouser.com/datasheet/2/870/gd25wq128e_rev1_2_20210926-1825480.pdf
+total_size = 0x1000000 # 16 MiB
+capacity = 0x18
+write_status_register_split = true
+e7_quad_word_read = false
