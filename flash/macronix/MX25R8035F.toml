@@ -1,0 +1,11 @@
+# Settings for the Macronix MX25R8035F 1MiB SPI flash.
+# Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/8749/MX25R8035F,%20Wide%20Range,%208Mb,%20v1.6.pdf
+# In low power mode, quad operations can only run at 8 MHz.
+total_size = 0x100000 # 1 MiB
+start_up_time_us = 800
+manufacturer_id = 0xc2
+memory_type = 0x28
+capacity = 0x14
+max_clock_speed_mhz = 8 # 33 mhz for 1-bit operations
+quad_enable_bit_mask = 0x40
+has_sector_protection = false
