@@ -1,2 +1,3 @@
 manufacturer_id = 0x1f
 quad_enable_status_byte = 2
+use_global_block_protection_lock = false
