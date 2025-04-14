@@ -14,7 +14,11 @@ max_clock_speed_mhz = 0
 # register when single_status_byte = true, and the second status byte when false.
 quad_enable_bit_mask = 0x0
 
+# Device has sector-level write protection
 has_sector_protection = false
+
+# Device uses global block protection lock instead of status register bits to enable sector writes
+use_global_block_protection_lock = false
 
 # Supports the 0x0b fast read command with 8 dummy cycles.
 supports_fast_read = false

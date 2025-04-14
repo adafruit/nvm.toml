@@ -1,2 +1,3 @@
 manufacturer_id = 0xef
 has_sector_protection = false
+use_global_block_protection_lock = false

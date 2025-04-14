@@ -1,8 +1,8 @@
-# Settings for the Microchip SST26VF016B 16Mb (2MiB) QSPI flash.
-# Datasheet: https://www.microchip.com/en-us/product/SST26VF016B
-total_size = 0x200000 # 2 MiB
+# Settings for the Microchip SST26VF032B 16Mb (2MiB) QSPI flash.
+# Datasheet: https://www.microchip.com/en-us/product/SST26VF032B
+total_size = 0x400000 # 4 MiB
 memory_type = 0x26
-capacity = 0x41
+capacity = 0x42
 start_up_time_us = 10000
 max_clock_speed_mhz = 104
 single_status_byte = false
@@ -12,4 +12,3 @@ quad_enable_status_byte = 0
 6b_quad_read = true
 32_qspi_write = true
 use_global_block_protection_lock = true
-

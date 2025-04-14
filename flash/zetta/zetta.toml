@@ -2,3 +2,4 @@ write_status_register_split = false
 quad_enable_status_byte = 2
 6b_quad_read = true
 32_qspi_write = true
+use_global_block_protection_lock = false

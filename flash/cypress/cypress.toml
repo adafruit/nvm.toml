@@ -3,3 +3,4 @@ quad_enable_bit_mask = 0x02
 has_sector_protection = false
 write_status_register_split = false
 quad_enable_status_byte = 2
+use_global_block_protection_lock = false
