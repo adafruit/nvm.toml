@@ -1,0 +1,7 @@
+# Settings for the Puya PY25Q16HB 2MiB SPI flash.
+# Datasheet: https://www.puyasemi.com/download_path/%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C/Flash%20%E8%8A%AF%E7%89%87/PY25Q16HB_Datasheet_V1.6.pdf
+total_size = 0x200000 # 2 MiB
+capacity = 0x15
+write_status_register_split = false
+01_continuous_status_write = true
+e7_quad_word_read = true
