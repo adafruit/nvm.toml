@@ -12,4 +12,3 @@ quad_enable_status_byte = 0
 6b_quad_read = true
 32_qspi_write = true
 use_global_block_protection_lock = true
-
