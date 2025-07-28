@@ -7,4 +7,4 @@ write_status_register_split = false
 e7_quad_word_read = true
 supports_fast_read = true
 start_up_time_us = 1800
-max_clock_speed_mhz = 120 
+max_clock_speed_mhz = 120
