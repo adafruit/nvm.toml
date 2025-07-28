@@ -1,0 +1,10 @@
+# Settings for the Gigadevice GD25Q16C 2MiB SPI flash.
+# Datasheet: https://www.gigadevice.com.cn/Public/Uploads/uploadfile/files/20220714/DS-00091-GD25Q80C-Rev2.8.pdf
+total_size = 0x800000 # 8 MiB
+capacity = 0x17
+write_status_register_split = false
+01_continuous_status_write = true
+e7_quad_word_read = true
+supports_fast_read = true
+start_up_time_us = 1800
+max_clock_speed_mhz = 120 
