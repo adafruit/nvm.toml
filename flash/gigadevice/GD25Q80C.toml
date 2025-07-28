@@ -1,4 +1,4 @@
-# Settings for the Gigadevice GD25Q16C 2MiB SPI flash.
+# Settings for the Gigadevice GD25Q80C 8MiB SPI flash.
 # Datasheet: https://www.gigadevice.com.cn/Public/Uploads/uploadfile/files/20220714/DS-00091-GD25Q80C-Rev2.8.pdf
 total_size = 0x800000 # 8 MiB
 capacity = 0x17
