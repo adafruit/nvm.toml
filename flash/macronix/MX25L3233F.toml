@@ -1,10 +1,20 @@
 # Settings for the Macronix MX25L3233F 4MiB SPI flash.
 # Datasheet: http://www.macronix.com/Lists/Datasheet/Attachments/7426/MX25L3233F,%203V,%2032Mb,%20v1.6.pdf
+#
+# Read timing values are from the MX25L3233F datasheet Rev 1.7 (2021-02-19),
+# Table 18, pages 68-69 and Table 7, page 25.
+#
+# At power-on, 0xeb runs at 104 MHz. 133 MHz needs 10 clocks after the address
+# instead of 6, set by writing 1 to the DC bit (a dummy-clock setting in the
+# configuration register).
 total_size = 0x400000 # 4 MiB
 start_up_time_us = 5000
 manufacturer_id = 0xc2
 memory_type = 0x20
 capacity = 0x16
 max_clock_speed_mhz = 133
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 8
+min_output_hold_ns = 1
 quad_enable_bit_mask = 0x40
 has_sector_protection = false

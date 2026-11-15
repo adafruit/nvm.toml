@@ -1,4 +1,14 @@
 # Settings for the ISSI IS25LP128F 16MiB SPI flash.
 # Datasheet: http://www.issi.com/WW/pdf/25LP-WP128F.pdf
+#
+# Read timing values are from the IS25LP128F datasheet Rev A10 (2026-03-09),
+# section 9.6, pages 166-167 and Table 6.11, page 27.
+#
+# At power-on, 0xeb runs at only 81 MHz. 133 MHz needs at least 11 clocks after
+# the address instead of 6, set in the read register (which sets the dummy
+# clocks).
 total_size = 0x1000000 # 16 MiB
 capacity = 0x18
+eb_quad_read_max_clock_speed_mhz = 81
+max_output_valid_ns = 7
+min_output_hold_ns = 2

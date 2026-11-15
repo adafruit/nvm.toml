@@ -1,9 +1,19 @@
 # Settings for the Cypress (was Spansion) S25FL116K 2MiB SPI flash.
 # Datasheet: http://www.cypress.com/file/196886/download
+#
+# Read timing values are from the S25FL116K datasheet 002-00497 Rev *I
+# (2018-07-04), Table 10, page 25 and Table 24.
+#
+# At power-on, 0xeb runs at 78 MHz. 108 MHz needs more dummy clocks, set by
+# writing 8 or more to the latency control bits in status register 3. Those bits
+# set the number of dummy clocks.
 total_size = 0x200000 # 2 MiB
 start_up_time_us = 10000
 memory_type = 0x40
 capacity = 0x15
 max_clock_speed_mhz = 108
+eb_quad_read_max_clock_speed_mhz = 78
+max_output_valid_ns = 7
+min_output_hold_ns = 2
 6b_quad_read = true
 32_qspi_write = false

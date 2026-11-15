@@ -1,11 +1,23 @@
 # Settings for the Macronix MX25R6435F 8MiB SPI flash.
 # Datasheet: http://www.macronix.com/Lists/Datasheet/Attachments/7428/MX25R6435F,%20Wide%20Range,%2064Mb,%20v1.4.pdf
 # By default its in lower power mode which can only do 8mhz. In high power mode it can do 80mhz.
+#
+# Read timing values are from the MX25R6435F datasheet Rev 1.0 (2016-12-23),
+# Table 18, pages 67-70.
+#
+# This datasheet is for the J temperature grade (up to 105 °C). This entry
+# describes the parts with L in the ordering-code suffix (for example ...IL0),
+# which start in ultra-low-power mode. Parts with H in the suffix start in
+# high-performance mode. There, 0xeb runs at 75 MHz and output valid time is
+# 10 ns.
 total_size = 0x800000 # 8 MiB
 start_up_time_us = 5000
 manufacturer_id = 0xc2
 memory_type = 0x28
 capacity = 0x17
 max_clock_speed_mhz = 8
+eb_quad_read_max_clock_speed_mhz = 8
+max_output_valid_ns = 12
+min_output_hold_ns = 0
 quad_enable_bit_mask = 0x40
 has_sector_protection = false

@@ -1,7 +1,17 @@
 # Settings for the Puya PY25Q16HB 2MiB SPI flash.
 # Datasheet: https://www.puyasemi.com/download_path/%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C/Flash%20%E8%8A%AF%E7%89%87/PY25Q16HB_Datasheet_V1.6.pdf
+#
+# Read timing values are from the PY25Q16HB datasheet 1.6 (2024-10-12),
+# tables 5-3-1 and 5-3-2, pages 9-10.
+#
+# At power-on, 0xeb runs at 104 MHz. 133 MHz needs 10 clocks after the address
+# instead of 6, set by writing 1 to the DC bit (a dummy-clock setting). The DC
+# bit is volatile, so it clears at power-off.
 total_size = 0x200000 # 2 MiB
 capacity = 0x15
 write_status_register_split = false
 01_continuous_status_write = true
 e7_quad_word_read = true
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 7
+min_output_hold_ns = 1

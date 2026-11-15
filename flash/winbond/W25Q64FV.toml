@@ -1,10 +1,16 @@
 # Settings for the Winbond W25Q64FV 8MiB SPI flash.
 # Datasheet: https://www.winbond.com/resource-files/w25q64fv%20revs%2007182017.pdf
+#
+# Read timing values are from the W25Q64FV datasheet Rev S (2017-07-18), AC
+# characteristics, PDF page 76.
 total_size = 0x800000 # 8 MiB
 start_up_time_us = 5000
 memory_type = 0x40
 capacity = 0x17
 max_clock_speed_mhz = 104
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 7
+min_output_hold_ns = 0
 quad_enable_bit_mask = 0x02
 quad_enable_status_byte = 2
 write_status_register_split = false

@@ -1,9 +1,19 @@
 # Settings for the Macronix MX25L51245G 64MiB SPI flash.
 # Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/7437/MX25L51245G,%203V,%20512Mb,%20v1.6.pdf
+#
+# Read timing values are from the MX25L25645G datasheet Rev 2.0 (2022-11-25),
+# Table 25, pages 106-107 and Table 10, page 37.
+#
+# At power-on, 0xeb runs at 80 MHz. 133 MHz needs 10 clocks after the address
+# instead of 6, set by writing 11 to the DC bits (a dummy-clock setting in the
+# configuration register).
 total_size = 0x2000000 # 32 MiB
 start_up_time_us = 5000
 manufacturer_id = 0x9f
 memory_type = 0xab
 capacity = 0x90
 max_clock_speed_mhz = 133
+eb_quad_read_max_clock_speed_mhz = 80
+max_output_valid_ns = 8
+min_output_hold_ns = 1
 has_sector_protection = false

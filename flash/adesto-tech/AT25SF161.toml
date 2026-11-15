@@ -2,12 +2,18 @@
 # for the StringCar M0 (SAMD21) Express board.
 # Source: https://www.digikey.com/product-detail/en/adesto-technologies/AT25SF161-SDHD-T/1265-1230-1-ND/
 # Datasheet: https://www.adestotech.com/wpo-content/uploads/jDS-AT25SF161_046.pdf
+#
+# Read timing values are from the AT25SF161 datasheet DS-25SF161-046H (2017-08),
+# sections 12.4 and 12.5, pages 37-38.
 total_size = 0x200000 # 2 MiB
 memory_type = 0x86
 capacity = 0x01
 has_sector_protection = true
 start_up_time_us = 10000
 max_clock_speed_mhz = 85
+eb_quad_read_max_clock_speed_mhz = 85
+max_output_valid_ns = 8
+min_output_hold_ns = 0
 quad_enable_bit_mask = 0x00
 write_status_register_split = false
 6b_quad_read = false

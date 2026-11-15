@@ -1,10 +1,16 @@
 # Settings for the Winbond W25Q32FV 4MiB SPI flash.
 # Datasheet:http://www.winbond.com/resource-files/w25q32fv%20revj%2006032016.pdf?__locale=en
+#
+# Read timing values are from the W25Q32FV datasheet Rev J (2016-06-03), AC
+# characteristics, PDF page 85.
 total_size = 0x400000 # 4 MiB
 start_up_time_us = 5000
 memory_type = 0x40
 capacity = 0x16
 max_clock_speed_mhz = 104
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 7
+min_output_hold_ns = 2
 quad_enable_bit_mask = 0x00
 quad_enable_status_byte = 2
 write_status_register_split = true

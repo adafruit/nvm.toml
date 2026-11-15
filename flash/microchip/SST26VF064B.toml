@@ -1,10 +1,22 @@
 # Settings for the Microchip SST26VF064B 64b (8MiB) QSPI flash.
 # Datasheet: https://www.microchip.com/en-us/product/SST26VF064B
+#
+# Read timing values are from the SST26VF064B datasheet DS20005119K, Table 8-1,
+# page 48.
+#
+# The device powers on with the IOC bit (I/O configuration, in the configuration
+# register) set to 0, and 0xeb doesn't work until a host sets it to 1. That is
+# the same kind of step as setting the quad enable bit on other devices. 104 MHz
+# applies once IOC is 1. The SST26VF064BA is a different part that powers on
+# with IOC = 1.
 total_size = 0x800000 # 8 MiB
 memory_type = 0x26
 capacity = 0x43
 start_up_time_us = 10000
 max_clock_speed_mhz = 104
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 8
+min_output_hold_ns = 0
 single_status_byte = false
 write_status_register_split = false
 quad_enable_bit_mask = 0x02

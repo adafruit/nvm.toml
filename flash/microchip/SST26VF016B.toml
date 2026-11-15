@@ -1,10 +1,22 @@
 # Settings for the Microchip SST26VF016B 16Mb (2MiB) QSPI flash.
 # Datasheet: https://www.microchip.com/en-us/product/SST26VF016B
+#
+# Read timing values are from the SST26VF016B datasheet DS20005262G, Table 8-1,
+# page 47.
+#
+# In the 125 °C temperature grade, 0xeb is limited to 80 MHz. The device powers
+# on with the IOC bit (I/O configuration, in the configuration register) set to
+# 0, and 0xeb doesn't work until a host sets it to 1. That is the same kind of
+# step as setting the quad enable bit on other devices. The dummy clocks don't
+# change, so 104 MHz applies once IOC is 1.
 total_size = 0x200000 # 2 MiB
 memory_type = 0x26
 capacity = 0x41
 start_up_time_us = 10000
 max_clock_speed_mhz = 104
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 8
+min_output_hold_ns = 0
 single_status_byte = false
 write_status_register_split = false
 quad_enable_bit_mask = 0x02

@@ -1,5 +1,11 @@
 # Settings for the Gigadevice GD25Q16C 2MiB SPI flash.
 # Datasheet: http://www.gigadevice.com/datasheet/gd25q16c/
+#
+# Read timing values are from the GD25Q16C datasheet Rev 2.6, section 8.6,
+# pages 46-47.
+#
+# 120 MHz needs the device's High Performance Mode, which a host turns on with
+# command 0xa3.
 total_size = 0x200000 # 2 MiB
 capacity = 0x15
 write_status_register_split = false
@@ -7,3 +13,6 @@ write_status_register_split = false
 e7_quad_word_read = true
 start_up_time_us = 5000
 max_clock_speed_mhz = 104 # if we need 120 then we can turn on high performance mode
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 7
+min_output_hold_ns = 1.2

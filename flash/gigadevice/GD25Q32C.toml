@@ -1,5 +1,11 @@
 # Settings for the Gigadevice GD25Q32C 4MiB SPI flash.
 # Datasheet: http://www.elm-tech.com/en/products/spi-flash-memory/gd25q32/gd25q32.pdf
+#
+# Read timing values are from the GD25Q32C datasheet, section 8.6, page 56.
+#
+# Values are for the 85 °C temperature grade. In the 105 °C and 125 °C grades,
+# 0xeb is limited to 70 MHz. Those grades also have an output hold time of
+# 0.7 ns.
 total_size = 0x400000 # 4 MiB
 capacity = 0x16
 write_status_register_split = true
@@ -7,3 +13,6 @@ e7_quad_word_read = true
 01_continuous_status_write = false
 start_up_time_us = 5000
 max_clock_speed_mhz = 104 # if we need 120 then we can turn on high performance mode
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 7
+min_output_hold_ns = 1.2

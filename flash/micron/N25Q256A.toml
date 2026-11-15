@@ -1,4 +1,13 @@
 # Settings for the Micron N25Q256A 256Mb (32MiB) QSPI flash.
 # Datasheet: https://www.micron.com/-/media/client/global/documents/products/data-sheet/nor-flash/serial-nor/n25q/n25q_256mb_3v.pdf
+#
+# Read timing values are from the Micron N25Q256A datasheet Rev P (2013-01),
+# Table 41, pages 82-83 and Table 13, page 24.
+#
+# At power-on, 0xeb waits 8 clocks after the address, not 6, and runs at 95 MHz.
+# 108 MHz needs 10 clocks after the address, set in the configuration register.
 total_size = 0x1000000 # 16 MiB
 capacity = 0x19
+eb_quad_read_max_clock_speed_mhz = 95
+max_output_valid_ns = 7
+min_output_hold_ns = 1

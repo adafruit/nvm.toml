@@ -1,12 +1,20 @@
 # Settings for the Adesto Tech AT25SF041 1MiB SPI flash. It's on the SparkFun
 # SAMD51 Thing Plus board
 # Datasheet: https://www.adestotech.com/wp-content/uploads/DS-AT25SF041_044.pdf
+#
+# Read timing values are from the AT25SF041 datasheet DS-25SF041-044G (2017-08),
+# sections 12.4 and 12.5, pages 34-35.
+#
+# The datasheet names the part AT25SF041. It gives no load for its output valid
+# time, so max_output_valid_ns is left out.
 total_size = 0x80000 # 512 KiB
 memory_type = 0x84
 capacity = 0x01
 has_sector_protection = false
 start_up_time_us = 10000
 max_clock_speed_mhz = 85
+eb_quad_read_max_clock_speed_mhz = 85
+min_output_hold_ns = 0
 quad_enable_bit_mask = 0x00
 write_status_register_split = false
 6b_quad_read = false

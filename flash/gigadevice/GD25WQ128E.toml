@@ -1,6 +1,16 @@
 # Settings for the Gigadevice GD25WQ128E 16MiB SPI flash.
 # Datasheet: https://www.mouser.com/datasheet/2/870/gd25wq128e_rev1_2_20210926-1825480.pdf
+#
+# Read timing values are from the GD25WQ128E datasheet Rev 1.2 (2021-09),
+# section 8.6, page 44 and the dummy clock table, page 14.
+#
+# At power-on, 0xeb runs at 66 MHz. 104 MHz needs more dummy clocks, set by
+# writing 1 to the DC bit (a dummy-clock setting). The DC bit is non-volatile,
+# so setting it also changes the dummy clocks at every later power-on.
 total_size = 0x1000000 # 16 MiB
 capacity = 0x18
 write_status_register_split = true
 e7_quad_word_read = false
+eb_quad_read_max_clock_speed_mhz = 66
+max_output_valid_ns = 8
+min_output_hold_ns = 1.2

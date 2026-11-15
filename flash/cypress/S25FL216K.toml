@@ -1,9 +1,17 @@
 # Settings for the Cypress (was Spansion) S25FL216K 2MiB SPI flash.
 # Datasheet: http://www.cypress.com/file/197346/download
+#
+# Read timing values are from the S25FL216K datasheet 002-00719 Rev *K
+# (2017-11-09), Table 9.5, page 27.
+#
+# No 0xeb or other quad read. Dual Output Read (0x3b) runs at up to 65 MHz.
 total_size = 0x200000 # 2 MiB
 start_up_time_us = 10000
 memory_type = 0x40
 capacity = 0x15
 max_clock_speed_mhz = 65
+eb_quad_read_max_clock_speed_mhz = 0
+max_output_valid_ns = 14
+min_output_hold_ns = 0
 6b_quad_read = false
 32_qspi_write = false
