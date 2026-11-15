@@ -1,4 +1,4 @@
-# Settings for the Winbond W25Q16JV-IM 2MiB SPI flash. Note that JV-IQ has a different .memory_type (0x40)
+# Winbond W25Q16JV-IM 2MiB SPI flash. Note that JV-IQ has a different .memory_type (0x40)
 # Datasheet: https://www.winbond.com/resource-files/w25q16jv%20spi%20revf%2005092017.pdf
 #
 # Read timing values are from the W25Q16JV datasheet Rev F (2017-05-09), AC

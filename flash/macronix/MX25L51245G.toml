@@ -1,4 +1,4 @@
-# Settings for the Macronix MX25L51245G 64MiB SPI flash.
+# Macronix MX25L51245G 64MiB SPI flash.
 # Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/7437/MX25L51245G,%203V,%20512Mb,%20v1.6.pdf
 #
 # Read timing values are from the MX25L51245G datasheet Rev 1.7 (2020-07-20),

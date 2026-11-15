@@ -1,4 +1,4 @@
-# Settings for the Macronix MX25R8035F 1MiB SPI flash.
+# Macronix MX25R8035F 1MiB SPI flash.
 # Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/8749/MX25R8035F,%20Wide%20Range,%208Mb,%20v1.6.pdf
 # In low power mode, quad operations can only run at 8 MHz.
 #

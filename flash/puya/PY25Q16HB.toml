@@ -1,4 +1,4 @@
-# Settings for the Puya PY25Q16HB 2MiB SPI flash.
+# Puya PY25Q16HB 2MiB SPI flash.
 # Datasheet: https://www.puyasemi.com/download_path/%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C/Flash%20%E8%8A%AF%E7%89%87/PY25Q16HB_Datasheet_V1.6.pdf
 #
 # Read timing values are from the PY25Q16HB datasheet 1.6 (2024-10-12),

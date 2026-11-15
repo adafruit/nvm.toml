@@ -1,4 +1,4 @@
-# Settings for the Micron N25Q256A 256Mb (32MiB) QSPI flash.
+# Micron N25Q256A 256Mb (32MiB) QSPI flash.
 # Datasheet: https://www.micron.com/-/media/client/global/documents/products/data-sheet/nor-flash/serial-nor/n25q/n25q_256mb_3v.pdf
 #
 # Read timing values are from the Micron N25Q256A datasheet Rev P (2013-01),

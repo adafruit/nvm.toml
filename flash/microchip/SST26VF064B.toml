@@ -1,4 +1,4 @@
-# Settings for the Microchip SST26VF064B 64b (8MiB) QSPI flash.
+# Microchip SST26VF064B 64Mb (8MiB) QSPI flash.
 # Datasheet: https://www.microchip.com/en-us/product/SST26VF064B
 #
 # Read timing values are from the SST26VF064B datasheet DS20005119K, Table 8-1,

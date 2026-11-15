@@ -1,4 +1,4 @@
-# Settings for the Cypress (was Spansion) S25FL064L 8MiB SPI flash.
+# Cypress (was Spansion) S25FL064L 8MiB SPI flash.
 # Datasheet: http://www.cypress.com/file/316661/download
 #
 # Read timing values are from the S25FL064L datasheet 002-12878 Rev *H

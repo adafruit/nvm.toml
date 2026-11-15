@@ -1,5 +1,4 @@
-# Settings for the Adesto Tech AT25DF081A 1MiB SPI flash. It's on the SAMD21
-# Xplained board.
+# Adesto Tech AT25DF081A 1MiB SPI flash. Used on the SAMD21 Xplained board.
 # Datasheet: https://www.adestotech.com/wp-content/uploads/doc8715.pdf
 #
 # Read timing values are from the AT25DF081A datasheet 8715F (2022-02),

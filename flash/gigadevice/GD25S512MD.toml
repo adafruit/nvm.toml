@@ -1,4 +1,4 @@
-# Settings for the Gigadevice GD25S512MD 64MiB SPI flash.
+# Gigadevice GD25S512MD 64MiB SPI flash.
 # Datasheet: http://www.gigadevice.com/datasheet/gd25s512md/
 #
 # Read timing values are from the GD25S512MD datasheet v1.8 (2019-11-26),

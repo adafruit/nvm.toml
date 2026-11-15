@@ -1,4 +1,4 @@
-# Settings for the Macronix MX25L3233F 4MiB SPI flash.
+# Macronix MX25L3233F 4MiB SPI flash.
 # Datasheet: http://www.macronix.com/Lists/Datasheet/Attachments/7426/MX25L3233F,%203V,%2032Mb,%20v1.6.pdf
 #
 # Read timing values are from the MX25L3233F datasheet Rev 1.7 (2021-02-19),

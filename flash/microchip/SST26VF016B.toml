@@ -1,4 +1,4 @@
-# Settings for the Microchip SST26VF016B 16Mb (2MiB) QSPI flash.
+# Microchip SST26VF016B 16Mb (2MiB) QSPI flash.
 # Datasheet: https://www.microchip.com/en-us/product/SST26VF016B
 #
 # Read timing values are from the SST26VF016B datasheet DS20005262G, Table 8-1,

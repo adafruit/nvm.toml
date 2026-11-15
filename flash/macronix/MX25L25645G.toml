@@ -1,5 +1,5 @@
-# Settings for the Macronix MX25L51245G 64MiB SPI flash.
-# Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/7437/MX25L51245G,%203V,%20512Mb,%20v1.6.pdf
+# Macronix MX25L25645G 32MiB SPI flash.
+# Datasheet: https://www.mouser.com/datasheet/2/819/MX25L25645G_2c_3V_2c_256Mb_2c_v2_0-3371093.pdf
 #
 # Read timing values are from the MX25L25645G datasheet Rev 2.0 (2022-11-25),
 # Table 25, pages 106-107 and Table 10, page 37.
@@ -9,9 +9,9 @@
 # configuration register).
 total_size = 0x2000000 # 32 MiB
 start_up_time_us = 5000
-manufacturer_id = 0x9f
-memory_type = 0xab
-capacity = 0x90
+manufacturer_id = 0xc2
+memory_type = 0x20
+capacity = 0x19
 max_clock_speed_mhz = 133
 eb_quad_read_max_clock_speed_mhz = 80
 max_output_valid_ns = 8

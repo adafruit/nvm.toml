@@ -1,4 +1,4 @@
-# Settings for the Cypress (was Spansion) S25FL216K 2MiB SPI flash.
+# Cypress (was Spansion) S25FL216K 2MiB SPI flash.
 # Datasheet: http://www.cypress.com/file/197346/download
 #
 # Read timing values are from the S25FL216K datasheet 002-00719 Rev *K

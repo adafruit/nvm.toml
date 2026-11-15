@@ -1,4 +1,4 @@
-# Settings for the Gigadevice GD25Q64C 8MiB SPI flash.
+# Gigadevice GD25Q64C 8MiB SPI flash.
 # Datasheet: http://www.elm-tech.com/en/products/spi-flash-memory/gd25q64/gd25q64.pdf
 #
 # Read timing values are from the GD25Q64C datasheet Rev 3.2, section 8.6,

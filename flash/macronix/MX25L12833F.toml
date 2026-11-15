@@ -1,4 +1,4 @@
-# Settings for the Macronix MX25L12833F 16MiB SPI flash
+# Macronix MX25L12833F 16MiB SPI flash
 # Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/7447/MX25L12833F,%203V,%20128Mb,%20v1.0.pdf
 #
 # Read timing values are from the MX25L12833F datasheet Rev 1.0 (2017-10-17),

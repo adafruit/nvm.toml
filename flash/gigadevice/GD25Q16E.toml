@@ -1,4 +1,4 @@
-# Settings for the Gigadevice GD25Q16E 2MiB SPI flash.
+# Gigadevice GD25Q16E 2MiB SPI flash.
 # Datasheet: https://www.gigadevice.com.cn/Public/Uploads/uploadfile/files/20220714/DS-00473-GD25Q16E-Rev1.2.pdf
 #
 # Read timing values are from the GD25Q16E datasheet Rev 1.2 (2021-12),

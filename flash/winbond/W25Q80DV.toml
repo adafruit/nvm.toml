@@ -1,4 +1,4 @@
-# Settings for the Winbond W25Q80DV 1MiB SPI flash.. Note that W25Q80DL has a different memory type (0x60)
+# Winbond W25Q80DV 1MiB SPI flash. Note that W25Q80DL has a different memory type (0x60)
 # Datasheet: https://www.winbond.com/resource-files/w25q80dv%20dl_revh_10022015.pdf
 #
 # Read timing values are from the W25Q80DV/DL preliminary datasheet Rev H

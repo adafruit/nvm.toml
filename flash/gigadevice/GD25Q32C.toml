@@ -1,4 +1,4 @@
-# Settings for the Gigadevice GD25Q32C 4MiB SPI flash.
+# Gigadevice GD25Q32C 4MiB SPI flash.
 # Datasheet: http://www.elm-tech.com/en/products/spi-flash-memory/gd25q32/gd25q32.pdf
 #
 # Read timing values are from the GD25Q32C datasheet, section 8.6, page 56.

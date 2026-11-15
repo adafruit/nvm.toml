@@ -1,4 +1,4 @@
-# Settings for the Macronix MX25L3206E 4MiB SPI flash.
+# Macronix MX25L3206E 4MiB SPI flash.
 # Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/7355/MX25L3206E,%203V,%2032Mb,%20v1.5.pdf
 #
 # Read timing values are from the MX25L3206E datasheet Rev 1.5 (2013-12-04),

@@ -1,4 +1,4 @@
-# Settings for the Macronix MX25R1635F 2MiB SPI flash.
+# Macronix MX25R1635F 2MiB SPI flash.
 # Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/7595/MX25R1635F,%20Wide%20Range,%2016Mb,%20v1.6.pdf
 # In low power mode, quad operations can only run at 8 MHz.
 #

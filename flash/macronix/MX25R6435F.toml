@@ -1,4 +1,4 @@
-# Settings for the Macronix MX25R6435F 8MiB SPI flash.
+# Macronix MX25R6435F 8MiB SPI flash.
 # Datasheet: http://www.macronix.com/Lists/Datasheet/Attachments/7428/MX25R6435F,%20Wide%20Range,%2064Mb,%20v1.4.pdf
 # By default its in lower power mode which can only do 8mhz. In high power mode it can do 80mhz.
 #

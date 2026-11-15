@@ -1,4 +1,4 @@
-# Settings for the Winbond W25Q32JV-IM 4MiB SPI flash.
+# Winbond W25Q32JV-IM 4MiB SPI flash.
 # Datasheet: https://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf
 #
 # Read timing values are from the W25Q32JV datasheet Rev G (2018-03-27), AC

@@ -1,4 +1,4 @@
-# Settings for the Winbond W25Q128JV-PM 16MiB SPI flash. Note that JV-IM has a different .memory_type (0x70)
+# Winbond W25Q128JV-PM 16MiB SPI flash. Note that JV-IM has a different .memory_type (0x70)
 # Datasheet: https://www.winbond.com/resource-files/w25q128jv%20revf%2003272018%20plus.pdf
 #
 # Read timing values are from the W25Q128JV datasheet Rev F (2018-03-27), AC

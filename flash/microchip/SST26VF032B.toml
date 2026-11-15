@@ -1,4 +1,4 @@
-# Settings for the Microchip SST26VF032B 16Mb (2MiB) QSPI flash.
+# Microchip SST26VF032B 32Mb (4MiB) QSPI flash.
 # Datasheet: https://www.microchip.com/en-us/product/SST26VF032B
 #
 # Read timing values are from the SST26VF032B datasheet DS20005218L, Table 8-1,

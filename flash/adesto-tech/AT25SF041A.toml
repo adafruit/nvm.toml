@@ -1,5 +1,5 @@
-# Settings for the Adesto Tech AT25SF041 1MiB SPI flash. It's on the SparkFun
-# SAMD51 Thing Plus board
+# Adesto Tech AT25SF041 1MiB SPI flash. Used on the SparkFun SAMD51 Thing
+# Plus board.
 # Datasheet: https://www.adestotech.com/wp-content/uploads/DS-AT25SF041_044.pdf
 #
 # Read timing values are from the AT25SF041 datasheet DS-25SF041-044G (2017-08),

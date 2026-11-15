@@ -1,4 +1,4 @@
-# Settings for the Puya P25Q32SH 4MiB SPI flash.
+# Puya P25Q32SH 4MiB SPI flash.
 # Datasheet: https://www.puyasemi.com/uploadfiles/2021/08/202108231550495049.pdf
 #
 # Read timing values are from the P25Q32SH datasheet V1.8 (2023-10-27),

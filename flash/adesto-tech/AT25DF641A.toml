@@ -1,6 +1,5 @@
-# Settings for the Adesto Tech AT25DF641-SSHD-T 8MiB SPI flash
-# for the Oak Dev Tech Icy Tree M0 (SAMD21) feather board.
-# Source: https://www.digikey.com/product-detail/en/adesto-technologies/AT25SF641-SDHD-T/1265-1180-1-ND/
+# Adesto Tech AT25DF641A 8MiB SPI flash
+# used on the Oak Dev Tech Icy Tree M0 (SAMD21) feather board.
 # Datasheet: https://www.adestotech.com/wp-content/uploads/doc8693.pdf
 #
 # Read timing values are from the AT25DF641A datasheet 8693G (2022-02),

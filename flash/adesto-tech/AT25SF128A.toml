@@ -1,3 +1,5 @@
+# Datasheet: https://www.mouser.com/datasheet/3/1166/1/REN_AT25SF128A-168P_DST_20241112.pdf
+#
 # Read timing values are from the AT25SF128A datasheet Rev P (2024-11-13),
 # Table 24, pages 49-50.
 total_size = 0x1000000 # 16 MiB

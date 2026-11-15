@@ -1,4 +1,4 @@
-# Settings for the Macronix MX25R3235F 4MiB SPI flash.
+# Macronix MX25R3235F 4MiB SPI flash.
 # Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/8385/MX25R3235F,%20Wide%20Range,%2032Mb,%20v1.0.pdf
 # By default its in lower power mode which can only do 8mhz. In high power mode it can do 80mhz.
 #

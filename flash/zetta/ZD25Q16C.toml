@@ -1,4 +1,4 @@
-# Settings for the Zetta Device ZD25Q16C 2MiB SPI flash.
+# Zetta Device ZD25Q16C 2MiB SPI flash.
 # Datasheet: http://www.zettadevice.com/uploads/files/1009/Q16C/1665299839ecdfb859dd2f9682.pdf
 #
 # Read timing values are from the ZD25Q16C datasheet 1.3 (2022-03-26), Table 18,

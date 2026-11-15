@@ -1,5 +1,5 @@
-# Settings for the Macronix MX25L1606 2MiB SPI flash.
-# Datasheet:
+# Macronix MX25L1606 2MiB SPI flash.
+# Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/8689/MX25L1606E,%203V,%2016Mb,%20v1.9.pdf
 #
 # Read timing values are from the MX25L1606E datasheet Rev 1.9 (2017-11-13),
 # Table 13, page 35.
