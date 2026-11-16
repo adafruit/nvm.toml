@@ -1,5 +1,13 @@
-# Settings for the Gigadevice GD25Q16E 2MiB SPI flash.
+# Gigadevice GD25Q16E 2MiB SPI flash.
 # Datasheet: https://www.gigadevice.com.cn/Public/Uploads/uploadfile/files/20220714/DS-00473-GD25Q16E-Rev1.2.pdf
+#
+# Read timing values are from the GD25Q16E datasheet Rev 1.2 (2021-12),
+# section 8.6, pages 41-42 and Table 5, pages 12-13.
+#
+# At power-on, 0xeb runs at 104 MHz. 133 MHz needs more dummy clocks, set by
+# writing 1 to the DC bit (a dummy-clock setting in status register 2). The DC
+# bit is non-volatile, so setting it also changes the dummy clocks at every
+# later power-on.
 total_size = 0x200000 # 2 MiB
 capacity = 0x15
 write_status_register_split = false
@@ -7,3 +15,6 @@ write_status_register_split = false
 e7_quad_word_read = false
 start_up_time_us = 1000
 max_clock_speed_mhz = 133
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 7
+min_output_hold_ns = 1.2

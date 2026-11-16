@@ -1,10 +1,19 @@
-# Settings for the Winbond W25Q80DL 1MiB SPI flash.
+# Winbond W25Q80DL 1MiB SPI flash.
 # Datasheet: https://www.winbond.com/resource-files/w25q80dv%20dl_revh_10022015.pdf
+#
+# Read timing values are from the W25Q80DV/DL preliminary datasheet Rev H
+# (2015-10-02), AC characteristics, PDF page 59.
+#
+# This part is rated at 80 MHz. The datasheet also covers the W25Q80DV, and its
+# 104 MHz rating is for the W25Q80DV only.
 total_size = 0x100000 # 1 MiB
 start_up_time_us = 5000
 memory_type = 0x60
 capacity = 0x14
-max_clock_speed_mhz = 104
+max_clock_speed_mhz = 80 # W25Q80DL row of the AC characteristics, PDF page 59
+eb_quad_read_max_clock_speed_mhz = 80
+max_output_valid_ns = 6
+min_output_hold_ns = 0
 quad_enable_bit_mask = 0x02
 quad_enable_status_byte = 2
 write_status_register_split = false

@@ -1,4 +1,14 @@
-# Settings for the ISSI IS25LP016D 2MiB SPI flash.
+# ISSI IS25LP016D 2MiB SPI flash.
 # Datasheet: http://www.issi.com/WW/pdf/25LP-WP016D.pdf
+#
+# Read timing values are from the IS25LP016D datasheet Rev B16 (2025-01-01),
+# section 9.6, pages 96-97 and Table 6.11, page 19.
+#
+# At power-on, 0xeb runs at 104 MHz. 133 MHz needs 8 clocks after the address
+# instead of 6, set in the read register (which sets the dummy clocks). It also
+# needs a load of 15 pF or less.
 total_size = 0x200000 # 2 MiB
 capacity = 0x15
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 8
+min_output_hold_ns = 2

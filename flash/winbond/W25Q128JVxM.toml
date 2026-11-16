@@ -1,10 +1,16 @@
-# Settings for the Winbond W25Q128JV-PM 16MiB SPI flash. Note that JV-IM has a different .memory_type (0x70)
+# Winbond W25Q128JV-PM 16MiB SPI flash. Note that JV-IM has a different .memory_type (0x70)
 # Datasheet: https://www.winbond.com/resource-files/w25q128jv%20revf%2003272018%20plus.pdf
+#
+# Read timing values are from the W25Q128JV datasheet Rev F (2018-03-27), AC
+# characteristics, PDF pages 65-66.
 total_size = 0x1000000 # 16 MiB
 start_up_time_us = 5000
 memory_type = 0x70
 capacity = 0x18
 max_clock_speed_mhz = 133
+eb_quad_read_max_clock_speed_mhz = 133
+max_output_valid_ns = 6
+min_output_hold_ns = 1.5
 quad_enable_status_byte = 2
 quad_enable_bit_mask = 0x02
 write_status_register_split = true

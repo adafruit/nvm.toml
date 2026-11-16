@@ -1,9 +1,18 @@
-# Settings for the Cypress (was Spansion) S25FL064L 8MiB SPI flash.
+# Cypress (was Spansion) S25FL064L 8MiB SPI flash.
 # Datasheet: http://www.cypress.com/file/316661/download
+#
+# Read timing values are from the S25FL064L datasheet 002-12878 Rev *H
+# (2023-04-17), Table 54, page 154 and Table 17, page 41.
+#
+# At power-on, 0xeb waits 10 clocks after the address, not 6 (2 mode clocks and
+# 8 dummy clocks). 108 MHz assumes those 10 clocks.
 total_size = 0x800000 # 8 MiB
 start_up_time_us = 300
 memory_type = 0x60
 capacity = 0x17
 max_clock_speed_mhz = 108
+eb_quad_read_max_clock_speed_mhz = 108
+max_output_valid_ns = 8
+min_output_hold_ns = 1
 6b_quad_read = true
 32_qspi_write = true

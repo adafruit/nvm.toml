@@ -1,10 +1,19 @@
-# Settings for the Winbond W25Q32BV 4MiB SPI flash.
+# Winbond W25Q32BV 4MiB SPI flash.
 # Datasheet: https://www.winbond.com/resource-files/w25q32bv_revi_100413_wo_automotive.pdf
+#
+# Read timing values are from the W25Q32BV datasheet Rev I (2013-10-04), AC
+# characteristics, PDF page 67.
+#
+# 0xeb is limited to 80 MHz. The datasheet's 104 MHz applies only to reads on
+# one or two data lines.
 total_size = 0x400000 # 4 MiB
 start_up_time_us = 10000
 memory_type = 0x60
 capacity = 0x16
 max_clock_speed_mhz = 104
+eb_quad_read_max_clock_speed_mhz = 80
+max_output_valid_ns = 5
+min_output_hold_ns = 0
 quad_enable_bit_mask = 0x02
 quad_enable_status_byte = 2
 write_status_register_split = false

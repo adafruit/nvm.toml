@@ -1,10 +1,16 @@
-# Settings for the Winbond W25Q64JV-IQ 8MiB SPI flash. Note that JV-IM has a different .memory_type (0x70)
+# Winbond W25Q64JV-IQ 8MiB SPI flash. Note that JV-IM has a different .memory_type (0x70)
 # Datasheet: http://www.winbond.com/resource-files/w25q64jv%20revj%2003272018%20plus.pdf
+#
+# Read timing values are from the W25Q64JV datasheet Rev D (2021-06-01), AC
+# characteristics, PDF page 62.
 total_size = 0x800000 # 8 MiB
 start_up_time_us = 5000
 memory_type = 0x40
 capacity = 0x17
 max_clock_speed_mhz = 133
+eb_quad_read_max_clock_speed_mhz = 133
+max_output_valid_ns = 6
+min_output_hold_ns = 1.5
 quad_enable_bit_mask = 0x02
 quad_enable_status_byte = 2
 write_status_register_split = true

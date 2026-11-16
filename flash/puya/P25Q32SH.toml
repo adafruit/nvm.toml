@@ -1,7 +1,17 @@
-# Settings for the Puya P25Q32SH 4MiB SPI flash.
+# Puya P25Q32SH 4MiB SPI flash.
 # Datasheet: https://www.puyasemi.com/uploadfiles/2021/08/202108231550495049.pdf
+#
+# Read timing values are from the P25Q32SH datasheet V1.8 (2023-10-27),
+# tables 5-3-1 and 5-3-2, pages 10-11.
+#
+# At power-on, 0xeb runs at 104 MHz. 120 MHz needs 10 clocks after the address
+# instead of 6, set by writing 1 to the DC bit (a dummy-clock setting). The DC
+# bit is volatile, so it clears at power-off.
 total_size = 0x400000 # 4 MiB # Page 19
 capacity = 0x16 # page 80
 write_status_register_split = true # page 36
 01_continuous_status_write = true # page 25
 e7_quad_word_read = true # page 24
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 7
+min_output_hold_ns = 0

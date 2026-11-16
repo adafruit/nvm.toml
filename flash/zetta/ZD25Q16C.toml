@@ -1,10 +1,21 @@
-# Settings for the Zetta Device ZD25Q16C 2MiB SPI flash.
+# Zetta Device ZD25Q16C 2MiB SPI flash.
 # Datasheet: http://www.zettadevice.com/uploads/files/1009/Q16C/1665299839ecdfb859dd2f9682.pdf
+#
+# Read timing values are from the ZD25Q16C datasheet 1.3 (2022-03-26), Table 18,
+# page 78 and the dummy clock table, page 11.
+#
+# At power-on, 0xeb runs at 66 MHz. The AC characteristics table's 86 MHz needs
+# more dummy clocks, set by writing 1 to the DC bit (a dummy-clock setting). The
+# DC bit is non-volatile, so setting it also changes the dummy clocks at every
+# later power-on.
 total_size = 0x200000 # 2 MiB
 start_up_time_us = 8000
 manufacturer_id = 0xba
 memory_type = 0x60
 capacity = 0x15
 max_clock_speed_mhz = 104
+eb_quad_read_max_clock_speed_mhz = 66
+max_output_valid_ns = 7.3
+min_output_hold_ns = 0
 quad_enable_bit_mask = 0x02
 has_sector_protection = false

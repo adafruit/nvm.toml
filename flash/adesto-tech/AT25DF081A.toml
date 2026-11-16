@@ -1,12 +1,21 @@
-# Settings for the Adesto Tech AT25DF081A 1MiB SPI flash. It's on the SAMD21
-# Xplained board.
+# Adesto Tech AT25DF081A 1MiB SPI flash. Used on the SAMD21 Xplained board.
 # Datasheet: https://www.adestotech.com/wp-content/uploads/doc8715.pdf
+#
+# Read timing values are from the AT25DF081A datasheet 8715F (2022-02),
+# tables 14.4 and 14.5, page 44.
+#
+# No 0xeb or other quad read. Dual Output Read (0x3b) runs at up to 85 MHz. The
+# 5 ns output valid time is for a 30 pF load at up to 70 MHz. Above 70 MHz, the
+# datasheet requires a load of 15 pF or less.
 total_size = 0x100000 # 1 MiB
 memory_type = 0x45
 capacity = 0x01
 has_sector_protection = true
 start_up_time_us = 10000
 max_clock_speed_mhz = 85
+eb_quad_read_max_clock_speed_mhz = 0
+max_output_valid_ns = 5
+min_output_hold_ns = 2
 quad_enable_bit_mask = 0x00
 write_status_register_split = false
 6b_quad_read = false

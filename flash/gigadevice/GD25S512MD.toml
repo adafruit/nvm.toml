@@ -1,8 +1,17 @@
-# Settings for the Gigadevice GD25S512MD 64MiB SPI flash.
+# Gigadevice GD25S512MD 64MiB SPI flash.
 # Datasheet: http://www.gigadevice.com/datasheet/gd25s512md/
+#
+# Read timing values are from the GD25S512MD datasheet v1.8 (2019-11-26),
+# Table 31, page 76.
+#
+# 0xeb sends 3-byte addresses, so it can read only the first 16 MiB. Reading
+# further needs the device's 4-byte address mode.
 total_size = 0x4000000 # 64 MiB
 capacity = 0x19
 write_status_register_split = true
 e7_quad_word_read = false
 start_up_time_us = 5000
 max_clock_speed_mhz = 104 # if we need 120 then we can turn on high performance mode
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 7
+min_output_hold_ns = 1.8

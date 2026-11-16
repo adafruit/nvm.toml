@@ -1,9 +1,15 @@
-# Settings for the XTX XT25F64B
+# XTX XT25F64B
 # Datasheet: http://file2.dzsc.com/product/19/06/22/216185_132959081.pdf
+#
+# Read timing values are from the XT25F64B datasheet Rev 1.2 (2019-02-25),
+# section 7.8, page 63.
 total_size = 0x800000 # 8 Mib
 start_up_time_us = 10000
 memory_type = 0x40
 capacity = 0x17
 max_clock_speed_mhz = 80
+eb_quad_read_max_clock_speed_mhz = 108
+max_output_valid_ns = 6.5
+min_output_hold_ns = 1
 quad_enable_bit_mask = 0x02
 has_sector_protection = false

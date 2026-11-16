@@ -10,6 +10,33 @@ capacity = 0
 # achievable on a particular board.
 max_clock_speed_mhz = 0
 
+# Max clock speed for the Quad I/O Fast Read command (0xeb), using the number of
+# dummy clocks the device has at power-on. 0 if the device does not support
+# 0xeb.
+#
+# After the address, a 0xeb read sends a mode byte, then waits for some dummy
+# clocks before the data starts. The mode byte takes 2 clocks. Most devices use
+# 4 dummy clocks at power-on, so data starts 6 clocks after the address. Some
+# devices can run faster with more dummy clocks, set by writing a register.
+# Don't use that faster rate here. This value assumes the host leaves the
+# dummy clocks at their power-on setting.
+eb_quad_read_max_clock_speed_mhz = 0
+
+# Read timing from the datasheet's AC characteristics table, in nanoseconds. A
+# host uses these to choose a clock speed and when to sample each data bit.
+#
+# Use the values for a 30 pF load and the supply range that includes the
+# device's usual supply (3.3 V for most devices). If the datasheet doesn't give
+# a value for a 30 pF load, leave that line out rather than writing 0. A hold
+# time of 0 is a real datasheet value, so write it when the datasheet gives it.
+#
+# Longest time from a falling clock edge until the output data is valid
+# (tCLQV, also called tV).
+max_output_valid_ns = 0
+# Shortest time the previous data bit stays valid after a falling clock edge
+# (tCLQX, also called tHO). Many devices specify 0.
+min_output_hold_ns = 0
+
 # Bitmask for Quad Enable bit if present. 0x00 otherwise. This is for the first byte in the status
 # register when single_status_byte = true, and the second status byte when false.
 quad_enable_bit_mask = 0x0

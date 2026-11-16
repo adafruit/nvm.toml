@@ -1,10 +1,19 @@
-# Settings for the Macronix MX25L1606 2MiB SPI flash.
-# Datasheet:
+# Macronix MX25L1606 2MiB SPI flash.
+# Datasheet: https://www.macronix.com/Lists/Datasheet/Attachments/8689/MX25L1606E,%203V,%2016Mb,%20v1.9.pdf
+#
+# Read timing values are from the MX25L1606E datasheet Rev 1.9 (2017-11-13),
+# Table 13, page 35.
+#
+# No 0xeb or other quad read. The fastest reads are Fast Read (0x0b) at 86 MHz
+# and Dual Output Read (0x3b) at 80 MHz.
 total_size = 0x200000 # 2 MiB
 start_up_time_us = 5000
 manufacturer_id = 0xc2
 memory_type = 0x20
 capacity = 0x15
 max_clock_speed_mhz = 8
+eb_quad_read_max_clock_speed_mhz = 0
+max_output_valid_ns = 8
+min_output_hold_ns = 0
 quad_enable_bit_mask = 0x40
 has_sector_protection = false
