@@ -1,0 +1,30 @@
+# Zbit Semiconductor ZB25VQ16 2MiB SPI flash.
+# Datasheet: https://datasheet.lcsc.com/datasheet/pdf/0f22ccb7c74544bc34b485a66b4bc499.pdf?productCode=C495746
+#
+# Values are from the ZB25VQ16 preliminary datasheet rev. F (2019-04-01).
+# Read timing is from Table 8.6, page 56, for 2.7-3.6 V. Table 8.5, page 55,
+# gives a 30 pF load for those values.
+#
+# The datasheet's ID table (Table 7.4, page 33) lists memory type 0x60. The
+# parts fitted to the Kittenbot Meowbit v1.6 answer 0x9f with 5e 40 15 instead,
+# so this file uses 0x40. That ID was read from real hardware, and CircuitPython
+# mounts and uses the flash with these settings.
+total_size = 0x200000 # 2 MiB
+# Table 8.1, page 53: tPUW (power-up to first write) is at most 10 ms.
+start_up_time_us = 10000
+memory_type = 0x40
+capacity = 0x15
+max_clock_speed_mhz = 104
+# fC (104 MHz) covers every command except 0x03. The power-on default is 4 dummy
+# clocks for 0xeb (SFDP table, page 14).
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 7
+min_output_hold_ns = 2
+# QE is bit 1 of status register 2 (section 6.2.10, page 24).
+quad_enable_bit_mask = 0x02
+# Status register 2 is written with 0x31. Figure 7.5 shows 0x01 taking a single
+# data byte, so don't rely on a 16-bit 0x01 write.
+write_status_register_split = true
+01_continuous_status_write = false
+6b_quad_read = true
+32_qspi_write = true
