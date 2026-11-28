@@ -1,0 +1,29 @@
+# Zbit T25S16 2MiB SPI flash (BrightMoon part marking).
+# Datasheet: https://github.com/user-attachments/files/35314302/T25S16-V1.6.PWC.pdf
+#            T25S16 datasheet V1.6 (PDF dated 2021-04-28), supplied by KittenBot
+#            in adafruit/nvm.toml#27.
+#
+# Table 7.4 gives JEDEC ID 5E 40 15: manufacturer 5Eh, memory type 40h,
+# capacity 15h. The older T25S16 datasheet rev 2.0 (2013-11-04) listed
+# E0 40 15; the parts on Meowbit v1.6 boards answer 5E 40 15.
+#
+# Read timing is from Table 8.6a (2.7-3.6 V, 30 pF load).
+total_size = 0x200000 # 2 MiB
+# Table 8.1: tVSL (VCC min to CS# low) is 500 us; rounded up for margin.
+start_up_time_us = 1000
+memory_type = 0x40
+capacity = 0x15
+# Table 8.6a: 133 MHz for 0Bh/3Bh/6Bh and for EBh with DC=1. EBh at the
+# power-on default DC=0 is 104 MHz.
+max_clock_speed_mhz = 133
+eb_quad_read_max_clock_speed_mhz = 104
+max_output_valid_ns = 6
+min_output_hold_ns = 2
+# QE is SR2[1] (section 6.2.10).
+quad_enable_bit_mask = 0x02
+# 01h/31h/11h write SR1/SR2/SR3 individually (section 7.1.5); 01h takes one
+# data byte, so don't rely on a 16-bit 01h write.
+write_status_register_split = true
+01_continuous_status_write = false
+6b_quad_read = true
+32_qspi_write = true
