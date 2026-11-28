@@ -1,0 +1,24 @@
+# Winbond W25Q16JVSSIQ 2MiB SPI flash (SOIC-8 208-mil, IQ family).
+# Datasheet: https://www.winbond.com/resource-files/w25q16jv%20spi%20revf%2005092017.pdf
+#
+# This is a member of the W25Q16JV-IQ family and has the same JEDEC ID and
+# settings as W25Q16JVxQ (memory_type 0x40, capacity 0x15).  Kittenbot Meowbit
+# v1.7 uses this ordering code, so keep it as an explicit SKU rather than
+# relying only on the family wildcard.
+#
+# Read timing values are from the W25Q16JV datasheet Rev F (2017-05-09), AC
+# characteristics, PDF pages 62-63.
+total_size = 0x200000 # 2 MiB
+start_up_time_us = 5000
+memory_type = 0x40
+capacity = 0x15
+max_clock_speed_mhz = 133
+eb_quad_read_max_clock_speed_mhz = 133
+max_output_valid_ns = 6
+min_output_hold_ns = 1.5
+quad_enable_bit_mask = 0x02
+quad_enable_status_byte = 2
+write_status_register_split = false
+01_continuous_status_write = true
+6b_quad_read = true
+32_qspi_write = true

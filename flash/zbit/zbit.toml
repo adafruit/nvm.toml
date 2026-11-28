@@ -1,0 +1,4 @@
+manufacturer_id = 0x5e
+quad_enable_status_byte = 2
+has_sector_protection = false
+use_global_block_protection_lock = false
